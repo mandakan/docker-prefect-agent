@@ -10,7 +10,7 @@ RUN mkdir -p /usr/share/man/man1 \
     build-essential \
     gcc
 
-ARG PREFECT_VERSION
+ARG PREFECT_VERSION=0.14.10
 ENV PREFECT_PKG=prefect==$PREFECT_VERSION
 RUN pip3 install --no-cache-dir --user --no-warn-script-location \
     $PREFECT_PKG
